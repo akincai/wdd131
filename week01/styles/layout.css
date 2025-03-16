@@ -11,7 +11,7 @@ body {
 
 header {
     background: #333;
-    grid-column: 1 / 4;
+    grid-column: 1 / 3;
 }
 
 .main-content {
@@ -20,7 +20,7 @@ header {
 }
 .aside-content {
     background: #fff;
-    grid-column: 2 / 4;
+    grid-column: 2 / 3;
 }
 .main-content,
 .aside-content {
@@ -33,7 +33,7 @@ footer {
     height: 10rem;
     padding: 1rem;
     text-align: center;
-    grid-column: 1 / 4;
+    grid-column: 1 / 3;
 }
 
 h1 {
