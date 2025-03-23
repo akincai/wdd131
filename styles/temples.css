@@ -32,7 +32,7 @@ nav {
     flex: 1 1 auto;
 }
 .navigation a {
-    display: block;
+    display: none;
     color: white;
     font-size: 20px;
     padding: 1rem 1.25rem;
@@ -43,11 +43,32 @@ nav {
     background: #555;
 }
 
+.open a {
+	display: block;
+}
+
+#menu {
+    width: 25px;
+    font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: #000;
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+}
+#menu::before {
+    content: "☰";
+}
+#menu.open::before {
+    content: "❌";
+}
+
 main {
     max-width: calc(2 * (var(--image-width) + 2rem));
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 20px;
     place-items: center;
 }
