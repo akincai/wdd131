@@ -1,0 +1,85 @@
+:root {
+    --background-col: darkcyan;
+    --image-width: 400px;
+}
+* {
+    font-family: "Nunito", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: var(--background-col);
+    color: white;
+}
+
+header {
+    padding: 1rem;
+}
+header h1 {
+    font-size: 32px;
+}
+
+nav {
+    background-color: #333;
+}
+.navigation {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+.navigation li {
+    flex: 1 1 auto;
+}
+.navigation a {
+    display: block;
+    color: white;
+    font-size: 20px;
+    padding: 1rem 1.25rem;
+    text-decoration: none;
+    text-align: center;
+}
+.navigation a:hover {
+    background: #555;
+}
+
+main {
+    max-width: calc(2 * (var(--image-width) + 2rem));
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    place-items: center;
+}
+main h1 {
+    padding: 1rem;
+    text-align: center;
+    grid-column: 1 / -1;
+}
+
+figure {
+    display: inline-block;
+    padding: 1rem;
+}
+figure img {
+    width: 100%;
+    height: auto;
+}
+figure figcaption {
+    text-align: center;
+}
+
+footer {
+    color:white;
+    text-align: center;
+    height: 8rem;
+    padding: 1rem;
+    min-height: 2rem;
+}
+footer p {
+    font-size: 20px;
+}
+#lastModified {
+    color: yellow;
+    font-size: 15px;
+}
