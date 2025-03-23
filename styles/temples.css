@@ -51,10 +51,11 @@ main {
     gap: 20px;
     place-items: center;
 }
-main h1 {
+main h2 {
     padding: 1rem;
     text-align: center;
     grid-column: 1 / -1;
+    font-size: 28px;
 }
 
 figure {
