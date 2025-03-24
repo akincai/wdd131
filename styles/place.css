@@ -17,8 +17,13 @@ header, footer{
     color: white;
 }
 
+header {
+    height: 80px;
+}
+
 h1 {
     text-align: center;
+    padding: 2rem;
 }
 
 main {
@@ -66,6 +71,12 @@ section h2 {
 }
 .label::after {
     content: ":";
+}
+.temperature::after {
+    content: " °C"
+}
+.speed::after {
+    content: " km/h"
 }
 
 footer {
