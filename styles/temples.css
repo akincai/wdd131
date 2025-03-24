@@ -99,9 +99,9 @@ footer {
     min-height: 2rem;
 }
 footer p {
-    font-size: 20px;
+    font-size: 24px;
 }
 #lastModified {
-    color: yellow;
-    font-size: 15px;
+    color: black;
+    font-size: 18px;
 }
