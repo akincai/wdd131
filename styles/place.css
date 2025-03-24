@@ -1,6 +1,5 @@
 :root {
     --background-col: darkcyan;
-    --image-width: 400px;
 }
 * {
     font-family: "Nunito", sans-serif;
@@ -12,7 +11,7 @@ body {
     min-width: 420px;
 }
 
-header, main, footer{
+header, footer{
     background-color: var(--background-col);
     color: white;
 }
@@ -22,9 +21,8 @@ h1 {
 }
 
 main {
+    background-color: var(--background-col);
     color: black;
-    display: grid;
-    grid-template-columns: 1fr;
 }
 
 main picture {
@@ -38,14 +36,35 @@ picture img {
 }
 
 section {
-    background-color: floralwhite;
+    background-color: pink;
+    border-top: 2px solid gray;
+    border-bottom: 2px solid gray;
+    padding: 1rem;
 }
 section h2 {
     text-align: center;
+    font-size: 28px;
+    padding-bottom: 1rem;
 }
 .icon {
     display: block;
     margin: 0 auto;
+    padding-bottom: 1rem;
+}
+
+.data {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    font-size: 16px;
+}
+.label {
+    display: block;
+    text-align: right;
+    font-weight: bold;
+}
+.label::after {
+    content: ":";
 }
 
 footer {
@@ -64,5 +83,46 @@ footer p {
 
 /* LARGE VIEW */
 @media (min-width: 800px) {
+    main {
+        position: relative;
+    }
+    main picture {
+        position: relative;
+    }
+    section {
+        background-color: #ffffffcc;
+        display: block;
+        position: absolute;
+        border: none;
+    }
+    section h2 {
+        text-align: left;
+        padding: 1rem;
+        margin-bottom: 10px;
+        background-color: #ffc0cbaa;
+    }
+    section img {
+        opacity: 0;
+    }
+    #data {
+        top: 5%;
+        left: 5%;
+    }
+    #weather {
+        bottom: 5%;
+        right: 5%;
+    }
+    
+    .icon {
+        position:absolute;
+        top: 20px;
+        right: 20px;
+        padding-bottom: 0;
+    }
+    .icon::after {
+        font-size: 40px;
+        content: "🌥️";
+        text-align: center;
+    }
     
 }
