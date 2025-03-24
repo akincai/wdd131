@@ -1,5 +1,6 @@
 :root {
     --background-col: darkcyan;
+    --sec-bor: 2px solid gray;
 }
 * {
     font-family: "Nunito", sans-serif;
@@ -37,8 +38,8 @@ picture img {
 
 section {
     background-color: pink;
-    border-top: 2px solid gray;
-    border-bottom: 2px solid gray;
+    border-top: var(--sec-bor);
+    border-bottom: var(--sec-bor);
     padding: 1rem;
 }
 section h2 {
