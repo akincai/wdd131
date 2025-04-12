@@ -89,6 +89,7 @@ main h2 {
     height: 300px;
     background-color: #ddd;
     border: 1px solid #ccc;
+    padding: 10px;
 }
 .card img {
     width: 300px;
