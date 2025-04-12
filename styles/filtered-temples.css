@@ -66,6 +66,9 @@ nav {
     content: "❌";
 }
 
+main {
+    min-height: 700px;
+}
 main h2 {
     padding: 1rem;
     text-align: center;
