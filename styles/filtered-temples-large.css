@@ -8,7 +8,7 @@
 		justify-content: flex-end;
 		flex-direction: row;
 	}
-	.navigation button {
+	.navigation a {
         display: flex;
 		flex: 1 1 100%;
 	}
