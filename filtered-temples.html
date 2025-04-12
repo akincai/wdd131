@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Temple Album - Andrew Kincaid</title>
+    <meta name="description" content="A webpage for displaying pictures of temples. 
+    Creating this page also served as a lesson for the Document Object Model">
+    <meta name="author" content="Andrew Kincaid">
+    
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+    <script src="scripts/filtered-temples.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        <button type="button" id="menu"></button>
+        <nav>
+            <ul class="navigation">
+                <li><button type="button" id="home">
+                    Home
+                </button></li>
+                <li><button type="button" id="old">
+                    Old
+                </button></li>
+                <li><button type="button" id="new">
+                    New
+                </button></li>
+                <li><button type="button" id="large">
+                    Large
+                </button></li>
+                <li><button type="button" id="small">
+                    Small
+                </button></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Home</h2>
+        <div id="gallery"></div>
+    </main>
+    <footer>
+        <p>©<span id="currentYear"></span> | Andrew Kincaid | California</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
