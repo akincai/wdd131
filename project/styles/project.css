@@ -1,0 +1,122 @@
+:root {
+    --palette-col-1: #476;
+    --palette-col-2: #636;
+    --palette-col-3: #944;
+}
+* {
+    margin: 0;
+    padding: 0;
+    
+    font-family: "Nunito", sans-serif;
+}
+header, footer {
+    background-color: var(--palette-col-3);
+}
+
+header {
+    color: white;
+    text-align: center;
+    min-width: 500px;
+}
+h1 {
+    padding: 20px;
+    font-size: 40px;
+    border: 3px dotted var(--palette-col-1);
+}
+
+nav {
+    background-color: #333;
+}
+.navigation {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+.navigation li {
+    flex: 1 1 auto;
+}
+.navigation a {
+    display: none;
+    color: white;
+    font-size: 20px;
+    padding: 1rem 1.25rem;
+    text-decoration: none;
+    text-align: center;
+}
+
+.navigation a:hover {
+    background: var(--palette-col-1);
+}
+.open a {
+    display: block;
+    background-color: var(--palette-col-2);
+}
+
+#menu {
+    width: 25px;
+    font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: #000;
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+}
+#menu::before {
+    content: "☰";
+}
+#menu.open::before {
+    content: "❌";
+}
+
+main {
+    background-color: var(--palette-col-1);
+}
+
+#recipe-gallery {
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: 1fr;
+}
+
+.recipe-card {
+    min-width: 600px;
+    min-height: 100px;
+    max-width: 800px;
+    margin: 10px auto;
+    padding: 20px;
+    background-color: var(--palette-col-2);
+    border: 2px solid var(--palette-col-3);
+    color: white;
+    text-align: center;
+}
+
+.recipe {
+    background: white;
+    color: black;
+    font-weight: 600;
+    padding: 20px;
+    margin: auto 0;
+    text-align: left;
+}
+.recipe h3 {
+    text-decoration: underline;
+}
+.recipe p {
+    padding-bottom: 10px;
+}
+
+footer {
+    color:white;
+    text-align: center;
+    height: 8rem;
+    padding: 1rem;
+    min-height: 2rem;
+}
+footer p {
+    font-size: 24px;
+}
+#lastModified {
+    color: black;
+    font-size: 18px;
+}
