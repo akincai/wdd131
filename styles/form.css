@@ -1,0 +1,78 @@
+:root {
+    --background-col: darkcyan;
+}
+* {
+    font-family: "Nunito", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: var(--background-col);
+    color: white;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    background-color: #ccc;
+    padding: 30px;
+    margin: 15px auto;
+    width: 400px;
+}
+
+.heading {
+    margin-top: 20px;
+}
+
+select, input[type=date], textarea, input[type=text] {
+    width: 100%;
+    height: 40px;
+    font-size: 20px;
+}
+
+.stars-container{
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    align-items: center;
+}
+.stars {
+    text-align: center;
+}
+.stars input {
+    display: block;
+    margin: 0 auto;
+}
+
+.checkbox {
+    display: block;
+}
+
+textarea {
+    font-size: 16px;
+    height: 200px;
+}
+
+input[type=submit] {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 4px;
+}
+
+
+footer {
+    text-align: center;
+    height: 8rem;
+    padding: 1rem;
+    min-height: 2rem;
+}
+footer p {
+    font-size: 24px;
+}
+#lastModified {
+    color: black;
+    font-size: 18px;
+}

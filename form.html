@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Product Review Form - Andrew Kincaid</title>
+    <meta name="description" content="This webpage serves to teach the author how to create a webpage form">
+    <meta name="author" content="Andrew Kincaid">
+    <link rel="stylesheet" href="styles/form.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <script src="scripts/form.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form method="get" action="review.html">
+            <label>
+            <select name="product" id="product" required>
+                <option disabled selected>Select a Product...</option>
+                
+            </select>
+            </label>
+
+            <div class="heading">Overall Rating</div>
+            <div class="stars-container">
+            <label class="stars">☆<input type="radio" name="rating" value="1"></label>
+            <label class="stars">☆☆<input type="radio" name="rating" value="2"></label>
+            <label class="stars">☆☆☆<input type="radio" name="rating" value="3"></label>
+            <label class="stars">☆☆☆☆<input type="radio" name="rating" value="4"></label>
+            <label class="stars">☆☆☆☆☆<input type="radio" name="rating" value="5"></label>
+            </div>
+
+            <div class="heading">Date of Installation</div>
+            <input type="date" id="install-date" name="install-date" required>
+
+            <div class="heading">Which features did you find useful in the product?</div>
+            <div><em>(Check all that apply)</em></div>
+            <label class="checkbox"><input type="checkbox" id="durability" name="durability" value="yes"> Durability</label>
+            <label class="checkbox"><input type="checkbox" id="ease" name="ease" value="yes"> Ease of Use</label>
+            <label class="checkbox"><input type="checkbox" id="performance" name="performance" value="yes"> Performance</label>
+            <label class="checkbox"><input type="checkbox" id="design" name="design" value="yes"> Design</label>
+
+            <div class="heading">Written Review</div>
+            <textarea name="review" id="review"></textarea>
+
+            <div class="heading">Your Name</div>
+            <input type="text" id="name" name="name">
+            <input class="heading" type="submit" value="Submit Review">
+        </form>
+    </main>
+    <footer>
+        <p>©<span id="currentYear"></span> | Andrew Kincaid | California</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
